@@ -44,17 +44,17 @@
 				<form method="post" action="/add" id="subscription-form">
 					<input type="hidden" name="_token" value="{{ csrf_token() }}">
 					<label for="number">Credit card number</label>
-					<input type="number" name="number" data-stripe="number"  id="number" />
+					<input type="number" data-stripe="number"  id="number" />
 
 					<label for="cvc">CVC</label>
-					<input type="cvc" name="cvc" data-stripe="cvc"  id="cvc" />
+					<input type="cvc" data-stripe="cvc"  id="cvc" />
 
 					<p>
 						<label for="exp_month">Expiry Month</label>
-						<input type="number" name="exp_month" data-stripe="exp_month"  id="exp_month" />
+						<input type="number" data-stripe="exp_month"  id="exp_month" />
 
 						<label for="exp_year">Expiry Year</label>
-						<input type="number" name="exp_year" data-stripe="exp_year"  id="exp_year" />
+						<input type="number" data-stripe="exp_year"  id="exp_year" />
 					</p>
 					<input type="submit" value="Go!" />
 				</form>
